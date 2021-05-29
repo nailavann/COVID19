@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Top -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/relativeToolbar">
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Anasayfa"
+            android:textSize="18dp"
+            android:id="@+id/txtBaslik"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- Refresh Button -->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_refresh"
+            android:id="@+id/refreshButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"/>
+
+
+    </RelativeLayout>
+
+    <!-- Mid -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeToolbar"
+        android:layout_above="@+id/bottomBar"
+        android:id="@+id/frameLayout" />
+
+    <!-- Bottom -->
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:backgroundColor="@color/bottomBarBackgroundColor"
+        android:layout_alignParentBottom="true"
+        app:textSize="14.5dp"
+        app:menu="@menu/menu_item"/>
+
+</RelativeLayout>

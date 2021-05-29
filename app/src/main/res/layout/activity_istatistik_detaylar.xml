@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IstatistikDetaylar"
+    android:id="@+id/istatistikDetaylarLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDetaylarGuncellenme"
+        android:layout_marginTop="20dp"
+        android:text="Güncellenme"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ulkebaslik"
+        android:text="Turkey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textSize="31dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baslik"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ulkebaslik"
+        android:id="@+id/relativeGunluk"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Günlük Vaka"
+            android:textColor="@color/black"
+            android:fontFamily="@font/liberation"
+            android:id="@+id/gunlukvaka"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gunlukvaka"
+            android:text="1232"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:id="@+id/txtDetayGunlukVaka"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Günlük Ölüm"
+            android:layout_centerHorizontal="true"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/liberation"
+            android:textStyle="bold"
+            android:id="@+id/gunlukOlum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gunlukOlum"
+            android:id="@+id/txtDetayGunlukOlum"
+            android:text="1234"
+            android:textSize="19dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Günlük İyileşen"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/liberation"
+            android:id="@+id/gunlukİyilesen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21312"
+            android:textSize="19dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtDetayGunlukIyilesme"
+            android:textStyle="bold"
+            android:layout_below="@+id/gunlukİyilesen"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/black"
+        android:layout_below="@+id/relativeGunluk"
+        android:layout_marginTop="50dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeGunluk"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/relativeToplam">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Vaka"
+            android:textColor="@color/black"
+            android:fontFamily="@font/liberation"
+            android:id="@+id/toplamvaka"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toplamvaka"
+            android:text="12241"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:id="@+id/txtDetayToplamVaka"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Ölüm"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/liberation"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:id="@+id/toplamolum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toplamolum"
+            android:id="@+id/txtDetayToplamOlum"
+            android:text="12323"
+            android:layout_centerHorizontal="true"
+            android:textSize="19dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam İyileşen"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/liberation"
+            android:layout_alignParentRight="true"
+            android:id="@+id/toplamiyilesen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12323"
+            android:textSize="19dp"
+            android:id="@+id/txtDetayToplamIyilesen"
+            android:textStyle="bold"
+            android:layout_below="@+id/toplamiyilesen"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/black"
+        android:layout_below="@+id/relativeToplam"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ikincicizgi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ağır Hasta Sayısı"
+        android:layout_below="@+id/ikincicizgi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/agirhastasayisi"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/liberation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agirhastasayisi"
+        android:text="32456"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:id="@+id/txtDetayAgirHasta"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDetayAgirHasta"
+        android:text="Test Sayısı"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/testsayisi"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/liberation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="234"
+        android:layout_below="@+id/testsayisi"
+        android:layout_centerHorizontal="true"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:id="@+id/txtTestSayisi"/>
+
+
+
+
+
+
+
+</RelativeLayout>

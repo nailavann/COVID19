@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SemptomFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSemptomBaslik"
+        android:text="En yaygın semptomlar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/liberation"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSemptomBaslik"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:id="@+id/relativeEnYayginSemptom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ateş"
+            android:fontFamily="@font/cycle"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/txtAtes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cycle"
+            android:text="Kuru Öksürük"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtKuruOksuruk"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtYorgunluk"
+            android:text="Yorgunluk"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cycle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/black"
+        android:id="@+id/image1"
+        android:layout_below="@+id/relativeEnYayginSemptom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSemptomBaslik2"
+        android:text="Seyrek semptomlar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/relativeEnYayginSemptom"
+        android:fontFamily="@font/liberation"
+        android:textColor="@color/black"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeSeyrekSemptomlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSemptomBaslik2"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtAgriSizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cycle"
+            android:text="Boğaz Ağrısı"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtİshal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/cycle"
+            android:text="İshal"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtTatKaybi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/cycle"
+            android:text="Tat kaybı"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAgriSizi"
+            android:layout_marginTop="30dp"
+
+            android:fontFamily="@font/cycle"
+            android:text="Baş ağrısı"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtİshal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/cycle"
+            android:text="Koku kaybı"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTatKaybi"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/cycle"
+            android:text="Konjunktivit"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeSeyrekSemptomlar"
+        android:src="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSemptomBaslik3"
+        android:text="Ciddi semptomlar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/relativeSeyrekSemptomlar"
+        android:fontFamily="@font/liberation"
+        android:textColor="@color/black"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeCiddiSemptomlar"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtSemptomBaslik3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nefes Darlığı"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cycle"
+            android:id="@+id/txtNefesDarligi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Göğüs Ağrısı"
+            android:textStyle="bold"
+            android:fontFamily="@font/cycle"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hareket Kaybı"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cycle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/txtSemptomBaslik3"
+        android:layout_below="@+id/image2"
+        android:background="@drawable/alarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnAlertCiddi"/>
+
+
+</RelativeLayout>

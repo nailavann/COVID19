@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xxx"
+    tools:context=".AnasayfaFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtGuncellenme"
+        android:layout_marginTop="0dp" />
+
+
+    <TextView
+        android:id="@+id/txtCovidBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/impact"
+        android:text="COVID19"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeToplamVaka"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/txtCovidBaslik"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginRight="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/virus"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/toplamVaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/liberation"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="Toplam Vaka"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+             />
+
+        <TextView
+            android:id="@+id/txtToplamVaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeToplamOlu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/relativeToplamVaka"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/virus"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/ToplamOlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="Toplam Ölü"
+            android:textColor="@color/black"
+            android:fontFamily="@font/liberation"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/txtToplamOlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeToplamIyilesen"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/relativeToplamOlu"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/virus"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/ToplamIyılesen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="Toplam İyileşen"
+            android:textSize="19dp"
+            android:fontFamily="@font/liberation"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtToplamIyilesen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textColor="@color/green"
+            android:textSize="25dp" />
+
+
+
+    </RelativeLayout>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtGuncellenme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
